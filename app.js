@@ -37,6 +37,7 @@ router.get('/iptv/:p*', async (ctx, next) => {
 app.use(favicon(__dirname + '/favicon.ico'));
 // git clone https://github.com/hououinkami/AppleTV.git
 app.use(static(__dirname + '/AppleTV'));
+app.use(static(__dirname + '/public'));
 
 /**
  * main
